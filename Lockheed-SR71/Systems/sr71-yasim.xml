@@ -87,7 +87,7 @@
         flow="TRANSONIC"
         idrag="0.5"
         camber="0.003">
-        <stall   aoa="20" width="1" peak="1.5"/>
+        <stall   aoa="50" width="1" peak="1.5"/>
         <flap0 start="0"     end="0.66" lift="1.0" drag="80"/>
         <flap1 start="0.66"  end="1" lift="1.2" drag="1.3"/>
 
@@ -110,7 +110,7 @@
          taper="1"
          sweep="45"
          idrag="0.5">
-         <stall aoa="20" width="1" peak="1.5"/>
+         <stall aoa="50" width="1" peak="1.5"/>
   </mstab>
 
   <mstab x="5.919" y="-0.9" z="-0.8"
@@ -120,7 +120,7 @@
          sweep="45"
          idrag="0.5"
          dihedral="-180">
-         <stall aoa="20" width="1" peak="1.5"/>
+         <stall aoa="50" width="1" peak="1.5"/>
   </mstab>
 
   <hstab x="-13.40" y="0.96" z="-0.8"

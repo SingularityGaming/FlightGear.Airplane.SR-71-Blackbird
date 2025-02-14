@@ -4,7 +4,7 @@
 
   <sim>
 
-    <description>Lockheed SR 71 Blackbird (YASim)</description>
+    <description>nostall.Lockheed SR 71 Blackbird (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), F-GTUX (Nasal/FDM), BITW (FDM)</author>
 
     <aircraft-version>1.5</aircraft-version>

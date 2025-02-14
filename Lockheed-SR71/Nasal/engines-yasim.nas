@@ -23,7 +23,7 @@ var eng1start = func {
   gui.popupTip("*** Engine start 1 left  ***");
   eng1fueloff();
   eng1starter();
-  settimer(eng1fuelon, 2);
+  settimer(eng1fuelon, 0.1);
   setprop("/controls/engines/engine[0]/condition", 1);
   settimer(eng1stop, 8);
 }
@@ -32,14 +32,14 @@ var eng2start = func {
   gui.popupTip("*** Engine start 2 right  ***");
   eng2fueloff();
   eng2starter();
-  settimer(eng2fuelon, 2);
+  settimer(eng2fuelon, 0.1);
   setprop("/controls/engines/engine[1]/condition", 1);
   settimer(eng2stop, 8);
 }
 
 var engstart = func {
-  settimer(eng1start, 2);
-  settimer(eng2start, 10);
+  settimer(eng1start, 0.1);
+  settimer(eng2start, 0.1);
 }
 
 var engstop = func {
