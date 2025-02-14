@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <property-rule n="100">
+    <path>Aircraft/Lockheed-SR71/Models/Interior/Panel/Instruments/hsi/hsi-filter.xml</path>
+  </property-rule>
+
+  <autopilot n="100">
+    <path>Aircraft/Lockheed-SR71/Systems/glass-rain.xml</path>
+  </autopilot>
+
+</PropertyList>

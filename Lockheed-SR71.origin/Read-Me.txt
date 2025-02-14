@@ -1,0 +1,91 @@
+English/Français
+
+[English]
+----------
+
+A little history
+================
+
+SR 71 Blackbird
+===============
+
+Manufacturer                  : Lockheed
+Type                          :
+Year                          :
+Powerplant                    :
+Wingspan                      :
+Length                        :
+Height                        :
+weight                        :
+Cruise speed                  :
+Range                         :
+Crew                          :
+
+Some useful keys:
+=================
+
+d   : canopy
+D   : parachut
+
+Thanks
+======
+
+BITW for Ysimi
+Lionel ADAM (F-GTUX) for his remarks and his help with FDM
+
+===============
+BARANGER Emmanuel
+June,  04, 2007
+March, 24, 2020
+March, 07, 2022
+March, 10, 2022
+
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
+embaranger@gmail.com
+
+
+[Français]
+----------
+
+Un peu d'histoire
+=================
+
+SR 71 Blackbird
+===============
+
+Constructeur                  : Lockheed
+Type                          :
+Année                         :
+Moteur                        :
+Envergure                     :
+Longueur                      :
+Hauteur                       :
+Poids estimé au décollage     :
+Vitesse estimée de croisière  :
+Autonomie estimée             :
+Equipage                      :
+
+
+Quelques touches utiles :
+=========================
+
+d   : cockpit
+D   : parachute
+
+Remerciements
+=============
+
+BITW pour Ysimi
+Lionel ADAM (F-GTUX) pour ses remarques et son aide pour le FDM
+
+===============
+BARANGER Emmanuel
+04 Juin 2007
+24 Mars 2020
+07 Mars 2022
+10 Mars 2022
+
+http://helijah.free.fr/flightgear/hangar.htm
+http://embaranger.free.fr
+embaranger@gmail.com

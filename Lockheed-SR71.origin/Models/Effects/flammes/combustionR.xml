@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <name>FlammeALS</name>
+    <path>combustionALSR.xml</path>
+    <offsets>
+      <x-m> 0.1 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>FlammeALS</object-name>
+    <condition>
+      <property>sim/rendering/shaders/skydome</property>
+    </condition>
+  </animation>
+
+  <model>
+    <name>flammeNO_ALS</name>
+    <path>NO_ALS/combustionR.xml</path>
+    <offsets>
+      <x-m> 0.1 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>flammeNO_ALS</object-name>
+    <condition>
+      <not><property>sim/rendering/shaders/skydome</property></not>
+    </condition>
+  </animation>
+
+</PropertyList>

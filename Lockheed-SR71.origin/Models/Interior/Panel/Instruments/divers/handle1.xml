@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>handle1.ac</path>
+
+  <animation>
+    <object-name>handle</object-name>
+  </animation>
+
+</PropertyList>

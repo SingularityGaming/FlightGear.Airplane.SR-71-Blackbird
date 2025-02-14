@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>gear.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>base</object-name>
+    <object-name>lever</object-name>
+    <object-name>gearLOn</object-name>
+    <object-name>gearNOn</object-name>
+    <object-name>gearROn</object-name>
+    <object-name>gearOn</object-name>
+    <object-name>gearLOff</object-name>
+    <object-name>gearNOff</object-name>
+    <object-name>gearROff</object-name>
+    <object-name>gearOff</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>gearLOn</object-name>
+    <object-name>gearNOn</object-name>
+    <object-name>gearROn</object-name>
+    <object-name>gearOn</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>gearLOff</object-name>
+    <object-name>gearNOff</object-name>
+    <object-name>gearROff</object-name>
+    <object-name>gearOff</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <red>   0.1 </red>
+      <green> 0.1 </green>
+      <blue>  0.1 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>lever</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/gear/gear-down</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>lever</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0 </ind><dep> 0.000 </dep></entry>
+      <entry><ind> 1 </ind><dep> 0.034 </dep></entry>
+    </interpolation>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <!-- Lampe verte allumée si train sortie -->
+  <animation>
+    <type>select</type>
+    <object-name>gearNon</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[0]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>gearLon</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[1]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>gearRon</object-name>
+    <condition>
+      <equals>
+        <property>gear/gear[2]/position-norm</property>
+        <value> 1 </value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>gearon</object-name>
+    <condition>
+      <and>
+        <or>
+          <greater-than>
+            <property>gear/gear[0]/position-norm</property>
+            <value>0</value>
+          </greater-than>
+          <greater-than>
+            <property>gear/gear[1]/position-norm</property>
+            <value>0</value>
+          </greater-than>
+          <greater-than>
+            <property>gear/gear[2]/position-norm</property>
+            <value>0</value>
+          </greater-than>
+        </or>
+        <or>
+          <less-than>
+            <property>gear/gear[0]/position-norm</property>
+            <value>1</value>
+          </less-than>
+          <less-than>
+            <property>gear/gear[1]/position-norm</property>
+            <value>1</value>
+          </less-than>
+          <less-than>
+            <property>gear/gear[2]/position-norm</property>
+            <value>1</value>
+          </less-than>
+        </or>
+      </and>
+    </condition>
+  </animation>
+
+</PropertyList>
